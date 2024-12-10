@@ -81,6 +81,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Applications\Forms\Building.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Forms\Building.Designer.cs">
+      <DependentUpon>Building.cs</DependentUpon>
+    </Compile>
     <Compile Include="Applications\Forms\Overview.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,7 @@
     <Compile Include="Domains\Interface\IInvoiceRepository.cs" />
     <Compile Include="Domains\Interface\IRoomRepository.cs" />
     <Compile Include="Domains\Interface\IStudentRepository.cs" />
+    <Compile Include="Domains\Models\LoginModel.cs" />
     <Compile Include="Infras\DormitoryContext.cs" />
     <Compile Include="Domains\Entities\Entity.cs" />
     <Compile Include="Domains\Entities\Invoice.cs" />
@@ -120,6 +127,9 @@
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Applications\Forms\Building.resx">
+      <DependentUpon>Building.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Applications\Forms\Overview.resx">
       <DependentUpon>Overview.cs</DependentUpon>
     </EmbeddedResource>
